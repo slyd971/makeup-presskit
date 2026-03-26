@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { About } from "@/components/About";
 import { Collaborations } from "@/components/Collaborations";
 import { Contact } from "@/components/Contact";
+import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Portfolio } from "@/components/Portfolio";
 import { Services } from "@/components/Services";
@@ -59,6 +60,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
   return (
     <main style={themeStyle} className="min-h-screen">
       <div className="bg-editorial-grid bg-[length:auto,34px_34px,34px_34px]">
+        <Header artist={artist} />
         <TemplateSwitcher artists={makeupArtists} activeSlug={artist.slug} />
         <Hero artist={artist} />
         <About artist={artist} />

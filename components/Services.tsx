@@ -77,7 +77,7 @@ const serviceIcons: Record<
 
 export function Services({ artist }: ServicesProps) {
   return (
-    <section className="px-6 py-5 md:px-10 md:py-7">
+    <section id="services" className="scroll-mt-24 px-6 py-5 md:px-10 md:py-7">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
           <SectionIntro

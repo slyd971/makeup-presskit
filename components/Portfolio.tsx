@@ -24,7 +24,7 @@ export function Portfolio({ artist }: PortfolioProps) {
       : artist.portfolio.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="px-6 py-5 md:px-10 md:py-7">
+    <section id="portfolio" className="scroll-mt-24 px-6 py-5 md:px-10 md:py-7">
       <div className="mx-auto max-w-7xl">
         <SectionIntro
           eyebrow="Portfolio"

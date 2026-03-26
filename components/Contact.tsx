@@ -37,7 +37,7 @@ export function Contact({ artist }: ContactProps) {
   ].filter(Boolean) as { label: string; value: string; href: string }[];
 
   return (
-    <section className="px-6 pb-7 pt-5 md:px-10 md:pb-9 md:pt-7">
+    <section id="contact" className="scroll-mt-24 px-6 pb-7 pt-5 md:px-10 md:pb-9 md:pt-7">
       <FadeIn className="mx-auto max-w-7xl overflow-hidden rounded-[2.25rem] border border-black/5 bg-white shadow-glow">
         <div className="grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
           <SectionIntro

@@ -19,6 +19,23 @@ export function Hero({ artist }: HeroProps) {
     backgroundColor: `${artist.design.primaryColor}12`
   };
 
+  const renderStats = () => (
+    <div className="mt-7 grid gap-2 sm:grid-cols-3">
+      {artist.stats.map((stat, index) => (
+        <FadeIn key={stat.label} delay={0.12 + index * 0.05}>
+          <article className="rounded-[1rem] border border-black/5 bg-white/82 px-3.5 py-3 shadow-soft backdrop-blur">
+            <p className="font-serif text-[1.9rem] leading-none text-ink md:text-[2.2rem]">
+              {stat.value}
+            </p>
+            <p className="mt-1 text-[10px] uppercase leading-tight tracking-[0.2em] text-ink/55">
+              {stat.label}
+            </p>
+          </article>
+        </FadeIn>
+      ))}
+    </div>
+  );
+
   const renderTextBlock = (compact = false) => (
     <FadeIn className={compact ? "max-w-xl" : "max-w-2xl"}>
       <div className="inline-flex items-center gap-3 rounded-full border border-black/5 bg-white/80 px-4 py-2 text-sm text-ink/70 shadow-soft backdrop-blur">
@@ -56,19 +73,19 @@ export function Hero({ artist }: HeroProps) {
           View Instagram
         </Link>
       </div>
+
+      {renderStats()}
     </FadeIn>
   );
 
   if (artist.hero.variant === "portrait-stack") {
     return (
-      <section className="relative overflow-hidden px-6 pb-5 pt-4 md:px-10 md:pb-7 md:pt-5">
+      <section id="home" className="relative overflow-hidden px-6 pb-5 pt-24 md:px-10 md:pb-7 md:pt-28">
         <div className="absolute inset-x-0 top-0 h-[32rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.95),transparent_55%)]" />
         <div className="absolute left-10 top-10 h-72 w-72 rounded-full blur-3xl md:h-96 md:w-96" style={accentGlowStyle} />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-7 lg:grid-cols-[0.9fr_1.1fr]">
-          {renderTextBlock(true)}
-
-          <div className="grid gap-5 md:grid-cols-[0.58fr_0.42fr]">
+          <div className="order-1 grid gap-5 md:grid-cols-[0.58fr_0.42fr] lg:order-2">
             <FadeIn delay={0.08}>
               <div className="relative overflow-hidden rounded-[2rem] bg-white p-3 shadow-glow">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
@@ -112,6 +129,8 @@ export function Hero({ artist }: HeroProps) {
               ) : null}
             </div>
           </div>
+
+          <div className="order-2 lg:order-1">{renderTextBlock(true)}</div>
         </div>
       </section>
     );
@@ -119,15 +138,13 @@ export function Hero({ artist }: HeroProps) {
 
   if (artist.hero.variant === "cinematic-video") {
     return (
-      <section className="relative overflow-hidden px-6 pb-5 pt-4 md:px-10 md:pb-7 md:pt-5">
+      <section id="home" className="relative overflow-hidden px-6 pb-5 pt-24 md:px-10 md:pb-7 md:pt-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.92),transparent_42%)]" />
         <div className="absolute right-0 top-0 h-[30rem] w-[30rem] rounded-full blur-3xl" style={accentGlowStyle} />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-7 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-            {renderTextBlock(true)}
-
-            <FadeIn delay={0.12}>
+            <FadeIn delay={0.12} className="order-1 lg:order-2">
               <div className="relative overflow-hidden rounded-[2.25rem] border border-white/40 bg-white/50 p-3 shadow-glow backdrop-blur">
                 <div className="relative overflow-hidden rounded-[1.75rem]">
                   {artist.hero.videoPoster ? (
@@ -169,6 +186,8 @@ export function Hero({ artist }: HeroProps) {
                 </div>
               </div>
             </FadeIn>
+
+            <div className="order-2 lg:order-1">{renderTextBlock(true)}</div>
           </div>
         </div>
       </section>
@@ -176,14 +195,12 @@ export function Hero({ artist }: HeroProps) {
   }
 
   return (
-    <section className="relative overflow-hidden px-6 pb-5 pt-4 md:px-10 md:pb-7 md:pt-5">
+    <section id="home" className="relative overflow-hidden px-6 pb-5 pt-24 md:px-10 md:pb-7 md:pt-28">
       <div className="absolute inset-x-0 top-0 h-[32rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.95),transparent_55%)]" />
       <div className="absolute right-[-8rem] top-10 h-72 w-72 rounded-full blur-3xl md:h-96 md:w-96" style={accentGlowStyle} />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-7 lg:grid-cols-[1.05fr_0.95fr]">
-        {renderTextBlock()}
-
-        <FadeIn delay={0.12}>
+        <FadeIn delay={0.12} className="order-1 lg:order-2">
           <div className="relative mx-auto max-w-xl">
             <div className="absolute -inset-6 rounded-[2rem] blur-3xl" style={frameGlowStyle} />
             <div className="relative overflow-hidden rounded-[2rem] bg-white p-3 shadow-glow">
@@ -200,6 +217,8 @@ export function Hero({ artist }: HeroProps) {
             </div>
           </div>
         </FadeIn>
+
+        <div className="order-2 lg:order-1">{renderTextBlock()}</div>
       </div>
     </section>
   );
