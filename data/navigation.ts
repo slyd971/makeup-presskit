@@ -4,8 +4,10 @@ export const pressKitNavigation = {
   items: [
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
+    { label: "Lookbook", href: "#portfolio" },
+    { label: "Kit", href: "#work-kit" },
     { label: "Motion", href: "#videos" },
+    { label: "Before / After", href: "#before-after" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" }
   ],

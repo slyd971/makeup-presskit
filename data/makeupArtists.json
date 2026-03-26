@@ -18,16 +18,19 @@
       {
         "title": "Bridal Signature",
         "description": "Luxury bridal makeup with trial, skin preparation guidance and an on-site beauty experience.",
+        "priceFrom": "350 €",
         "icon": "diamond"
       },
       {
         "title": "Editorial Beauty",
         "description": "Refined beauty direction for lookbooks, campaigns, beauty shoots and fashion content.",
+        "priceFrom": "280 €",
         "icon": "camera"
       },
       {
         "title": "Red Carpet & Events",
         "description": "High-impact yet elegant makeup designed to last under flash photography and long event schedules.",
+        "priceFrom": "180 €",
         "icon": "sparkle"
       }
     ],
@@ -49,34 +52,48 @@
       {
         "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
         "alt": "Natural bridal makeup portrait",
-        "category": "Bridal"
+        "category": "mariage"
       },
       {
         "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Editorial beauty close-up",
-        "category": "Editorial"
+        "category": "editorial"
       },
       {
         "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
         "alt": "Glowy skin makeup for campaign",
-        "category": "Beauty"
+        "category": "nude"
       },
       {
         "src": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Fashion event makeup",
-        "category": "Events"
+        "category": "artistique"
       },
       {
         "src": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80",
         "alt": "Soft glam beauty portrait",
-        "category": "Beauty"
+        "category": "naturel"
       },
       {
         "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
         "alt": "Sophisticated makeup for evening event",
-        "category": "Events"
+        "category": "artistique"
       }
     ],
+    "beforeAfter": [
+      {
+        "title": "Mariage peau lumineuse",
+        "context": "Preparation de peau, correction de teint et mise en lumiere douce pour un rendu elegant, photogenique et durable du matin jusqu'au soir.",
+        "beforeSrc": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80",
+        "beforeAlt": "Avant maquillage portrait naturel",
+        "afterSrc": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+        "afterAlt": "Apres maquillage mariage portrait lumineux"
+      }
+    ],
+    "workKit": {
+      "brands": ["MAC", "Dior", "Chanel", "Make Up For Ever"],
+      "note": "Je n'utilise que des produits professionnels, longue tenue et adaptes aux peaux sensibles ou hypoallergeniques."
+    },
     "videos": [
       {
         "src": "https://cdn.coverr.co/videos/coverr-woman-with-evening-makeup-1575444639126?download=1080p",
@@ -152,16 +169,19 @@
       {
         "title": "Campaign Beauty",
         "description": "Premium beauty execution for campaigns, digital launches and brand storytelling shoots.",
+        "priceFrom": "260 €",
         "icon": "camera"
       },
       {
         "title": "Lookbook & E-commerce",
         "description": "Clean commercial makeup that keeps skin alive while supporting styling, casting and brand tone.",
+        "priceFrom": "220 €",
         "icon": "brush"
       },
       {
         "title": "Talent Grooming",
         "description": "Camera-ready beauty and on-set touch-ups for founders, presenters and public appearances.",
+        "priceFrom": "160 €",
         "icon": "profile"
       }
     ],
@@ -183,34 +203,48 @@
       {
         "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Editorial beauty close-up with fresh skin",
-        "category": "Editorial"
+        "category": "editorial"
       },
       {
         "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
         "alt": "Campaign portrait with glowy complexion",
-        "category": "Campaign"
+        "category": "nude"
       },
       {
         "src": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Fashion week inspired makeup look",
-        "category": "Fashion"
+        "category": "artistique"
       },
       {
         "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
         "alt": "Elevated event beauty portrait",
-        "category": "Events"
+        "category": "mariage"
       },
       {
         "src": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80",
         "alt": "Soft matte beauty story portrait",
-        "category": "Editorial"
+        "category": "naturel"
       },
       {
         "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
         "alt": "Bridal-inspired clean beauty portrait",
-        "category": "Beauty"
+        "category": "mariage"
       }
     ],
+    "beforeAfter": [
+      {
+        "title": "Lookbook clean skin",
+        "context": "Correction legere, harmonisation du teint et direction de texture pour garder une peau vivante tout en elevant le rendu camera.",
+        "beforeSrc": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+        "beforeAlt": "Avant maquillage studio",
+        "afterSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
+        "afterAlt": "Apres maquillage lookbook studio"
+      }
+    ],
+    "workKit": {
+      "brands": ["NARS", "MAC", "Dior", "Charlotte Tilbury"],
+      "note": "Selection de produits professionnels pour la photo, la video et les peaux exigeantes, avec un focus sur la tenue et le confort."
+    },
     "videos": [
       {
         "src": "https://cdn.coverr.co/videos/coverr-happy-woman-in-a-photo-shoot-1566216584324?download=1080p",
@@ -285,16 +319,19 @@
       {
         "title": "Beauty Film Makeup",
         "description": "Makeup designed for motion, close-ups and premium brand storytelling across reels and campaign video.",
+        "priceFrom": "320 €",
         "icon": "camera"
       },
       {
         "title": "Runway & Backstage",
         "description": "Structured looks that translate across quick changes, backstage pace and live capture moments.",
+        "priceFrom": "250 €",
         "icon": "runway"
       },
       {
         "title": "VIP Event Beauty",
         "description": "High-performance luxury makeup for galas, launches and public-facing appearances.",
+        "priceFrom": "210 €",
         "icon": "sparkle"
       }
     ],
@@ -316,34 +353,48 @@
       {
         "src": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Runway-inspired cinematic portrait",
-        "category": "Runway"
+        "category": "artistique"
       },
       {
         "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
         "alt": "Luxury event beauty close-up",
-        "category": "Events"
+        "category": "mariage"
       },
       {
         "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",
         "alt": "Glossy beauty campaign detail",
-        "category": "Beauty Film"
+        "category": "editorial"
       },
       {
         "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
         "alt": "Elegant complexion for luxury content",
-        "category": "Beauty Film"
+        "category": "nude"
       },
       {
         "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
         "alt": "Timeless bridal-inspired glow",
-        "category": "Beauty"
+        "category": "mariage"
       },
       {
         "src": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80",
         "alt": "Editorial skin story portrait",
-        "category": "Editorial"
+        "category": "naturel"
       }
     ],
+    "beforeAfter": [
+      {
+        "title": "VIP evening transformation",
+        "context": "Definition du regard, structure du teint et glow controle pour une allure premium qui tient aussi bien en reel qu'en evenement.",
+        "beforeSrc": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80",
+        "beforeAlt": "Avant maquillage soiree",
+        "afterSrc": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+        "afterAlt": "Apres maquillage soiree premium"
+      }
+    ],
+    "workKit": {
+      "brands": ["Dior", "Chanel", "Pat McGrath", "Make Up For Ever"],
+      "note": "Uniquement des references professionnelles, hautes performances et adaptées a la photo, au tournage et aux peaux sensibles."
+    },
     "videos": [
       {
         "src": "https://cdn.coverr.co/videos/coverr-applying-beauty-makeup-1566216584325?download=1080p",

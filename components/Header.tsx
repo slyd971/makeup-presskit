@@ -96,10 +96,14 @@ export function Header({ artist }: HeaderProps) {
           </Link>
         </div>
 
-        <div className="flex items-center gap-3 md:gap-6 xl:gap-8">
-          <nav className="hidden items-center gap-7 text-[11px] font-semibold uppercase tracking-[0.28em] text-ink/72 lg:flex xl:gap-9">
+        <div className="flex min-w-0 items-center gap-3 md:gap-4 xl:gap-5">
+          <nav className="hidden min-w-0 flex-1 items-center justify-end gap-4 overflow-x-auto whitespace-nowrap pr-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink/72 lg:flex xl:gap-5 xl:text-[11px] xl:tracking-[0.24em]">
             {pressKitNavigation.items.map((item) => (
-              <a key={item.href} href={item.href} className="transition hover:text-ink">
+              <a
+                key={item.href}
+                href={item.href}
+                className="shrink-0 transition hover:text-ink"
+              >
                 {item.label}
               </a>
             ))}
@@ -107,10 +111,10 @@ export function Header({ artist }: HeaderProps) {
 
           <a
             href={pressKitNavigation.cta.href}
-            className={`hidden rounded-full font-semibold uppercase text-white transition-all duration-300 hover:opacity-90 lg:inline-flex ${
+            className={`hidden shrink-0 rounded-full font-semibold uppercase text-white transition-all duration-300 hover:opacity-90 lg:inline-flex ${
               isHeaderCompact
-                ? "px-5 py-2 text-[11px] tracking-[0.18em]"
-                : "px-6 py-2.5 text-[11px] tracking-[0.24em]"
+                ? "px-4 py-2 text-[10px] tracking-[0.16em]"
+                : "px-5 py-2.5 text-[10px] tracking-[0.2em]"
             }`}
             style={headerAccent}
           >

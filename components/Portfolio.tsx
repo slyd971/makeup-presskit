@@ -13,13 +13,13 @@ type PortfolioProps = {
 
 export function Portfolio({ artist }: PortfolioProps) {
   const categories = useMemo(
-    () => ["All", ...new Set(artist.portfolio.map((item) => item.category))],
+    () => ["Tous", ...new Set(artist.portfolio.map((item) => item.category))],
     [artist.portfolio]
   );
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   const items =
-    activeCategory === "All"
+    activeCategory === "Tous"
       ? artist.portfolio
       : artist.portfolio.filter((item) => item.category === activeCategory);
 
@@ -27,9 +27,9 @@ export function Portfolio({ artist }: PortfolioProps) {
     <section id="portfolio" className="scroll-mt-24 px-6 py-5 md:px-10 md:py-7">
       <div className="mx-auto max-w-7xl">
         <SectionIntro
-          eyebrow="Portfolio"
-          title="Selected beauty work"
-          description="A responsive gallery with optional filtering keeps the experience editorial while staying practical for agency scale."
+          eyebrow="Lookbook"
+          title="Looks par type de maquillage"
+          description="Un lookbook filtrable par univers makeup pour montrer rapidement la direction beaute selon les besoins de la cliente."
         />
 
         <div className="mt-6 flex flex-wrap gap-2.5">

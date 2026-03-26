@@ -18,6 +18,7 @@ export type MakeupArtist = {
   services: {
     title: string;
     description: string;
+    priceFrom: string;
     icon:
       | "sparkle"
       | "brush"
@@ -35,6 +36,18 @@ export type MakeupArtist = {
     alt: string;
     category: string;
   }[];
+  beforeAfter?: {
+    title: string;
+    context: string;
+    beforeSrc: string;
+    beforeAlt: string;
+    afterSrc: string;
+    afterAlt: string;
+  }[];
+  workKit?: {
+    brands: string[];
+    note: string;
+  };
   videos?: {
     src: string;
     title: string;

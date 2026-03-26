@@ -6,7 +6,6 @@ type AboutProps = {
 };
 
 export function About({ artist }: AboutProps) {
-  const featuredCollaborations = artist.collaborations.slice(0, 6);
   const bioParagraphs = artist.bio
     .split(". ")
     .map((paragraph) => paragraph.trim())
@@ -69,16 +68,6 @@ export function About({ artist }: AboutProps) {
                   </div>
                 </div>
 
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {featuredCollaborations.map((collaboration) => (
-                    <div
-                      key={collaboration}
-                      className="rounded-full border border-black/8 bg-white/70 px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] text-ink/58"
-                    >
-                      {collaboration}
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </FadeIn>

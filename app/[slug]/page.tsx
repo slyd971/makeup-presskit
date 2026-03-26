@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { About } from "@/components/About";
+import { BeforeAfter } from "@/components/BeforeAfter";
 import { Collaborations } from "@/components/Collaborations";
 import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
@@ -12,6 +13,7 @@ import { Services } from "@/components/Services";
 import { TemplateSwitcher } from "@/components/TemplateSwitcher";
 import { Testimonials } from "@/components/Testimonials";
 import { Videos } from "@/components/Videos";
+import { WorkKit } from "@/components/WorkKit";
 import {
   makeupArtists,
   getMakeupArtistBySlug,
@@ -65,7 +67,9 @@ export default function ArtistPage({ params }: ArtistPageProps) {
         <Hero artist={artist} />
         <About artist={artist} />
         <Services artist={artist} />
+        <WorkKit artist={artist} />
         <Portfolio artist={artist} />
+        <BeforeAfter artist={artist} />
         <Videos artist={artist} />
         <Collaborations artist={artist} />
         <Testimonials artist={artist} />

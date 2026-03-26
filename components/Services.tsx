@@ -98,6 +98,18 @@ export function Services({ artist }: ServicesProps) {
                   {serviceIcons[service.icon]}
                 </div>
                 <h3 className="mt-8 font-serif text-3xl text-ink">{service.title}</h3>
+                <div className="mt-3 flex items-center justify-between gap-3">
+                  <p className="text-sm uppercase tracking-[0.2em] text-ink/48">
+                    a partir de {service.priceFrom}
+                  </p>
+                  <a
+                    href="#contact"
+                    className="inline-flex shrink-0 rounded-full px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-90"
+                    style={{ backgroundColor: artist.design.primaryColor }}
+                  >
+                    Book now
+                  </a>
+                </div>
                 <p className="mt-4 text-base leading-8 text-ink/70">
                   {service.description}
                 </p>
